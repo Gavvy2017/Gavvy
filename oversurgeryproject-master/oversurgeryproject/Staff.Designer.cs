@@ -634,7 +634,7 @@
             this.j.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.j.AutoSize = true;
             this.j.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.j.Location = new System.Drawing.Point(25, 106);
+            this.j.Location = new System.Drawing.Point(41, 106);
             this.j.Name = "j";
             this.j.Size = new System.Drawing.Size(486, 16);
             this.j.TabIndex = 7;
@@ -645,7 +645,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(1522, 982);
+            this.ClientSize = new System.Drawing.Size(1555, 982);
             this.Controls.Add(this.j);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.monthCalendar1);
