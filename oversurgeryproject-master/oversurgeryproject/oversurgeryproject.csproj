@@ -61,12 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\Desktop\oversurgeryproject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Desktop\oversurgeryproject.Designer.cs">
-      <DependentUpon>oversurgeryproject.cs</DependentUpon>
-    </Compile>
     <Compile Include="Appointment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +84,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OversugeryDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OversugeryDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OversugeryDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OversugeryDBDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,15 +108,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="..\..\..\..\..\Desktop\oversurgeryproject.resx">
-      <DependentUpon>oversurgeryproject.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +144,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +160,28 @@
     </None>
     <None Include="OversugeryDBDataSet.xss">
       <DependentUpon>OversugeryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet2.xsc">
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OversugeryDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OversugeryDBDataSet2.xss">
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet3.xsc">
+      <DependentUpon>OversugeryDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OversugeryDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OversugeryDBDataSet3.xss">
+      <DependentUpon>OversugeryDBDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

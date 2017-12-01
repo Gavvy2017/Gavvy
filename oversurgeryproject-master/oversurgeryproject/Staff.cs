@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace oversurgeryproject
 {
@@ -31,59 +32,30 @@ namespace oversurgeryproject
             mm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label800_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Staff_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'oversugeryDBDataSet3.staff' table. You can move, or remove it, as needed.
+            this.staffTableAdapter.Fill(this.oversugeryDBDataSet3.staff);
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\OversugeryDB.mdf;Integrated Security=True;Connect Timeout=30");
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //SqlDataAdapter sda = new SqlDataAdapter("select count(*) from staff where id ='" + comboBox1.Text + "'", conn);
+            //DataTable dt = new DataTable();
+            //sda.Fill(dt);
+            //dataGridView1.DataSource = dt;
         }
 
-        private void label3_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1130_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelA_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
+            string local = textBox1.Text;
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\OversugeryDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter da = new SqlDataAdapter("select * from staff where id = '" + local + "'", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
         }
     }
 }
