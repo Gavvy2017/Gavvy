@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace oversurgeryproject
 {
-    public partial class Login : Form
+    public partial class Form1 : Form
     {
-        public Login()
+        public Form1()
         {
             InitializeComponent();
         }

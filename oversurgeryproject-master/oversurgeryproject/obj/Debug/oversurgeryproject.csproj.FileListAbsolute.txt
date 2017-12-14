@@ -46,3 +46,4 @@ C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\o
 \\Mac\Home\Documents\GitHub\Gavvy\oversurgeryproject-master\oversurgeryproject\obj\Debug\oversurgeryproject.csproj.CoreCompileInputs.cache
 \\Mac\Home\Documents\GitHub\Gavvy\oversurgeryproject-master\oversurgeryproject\obj\Debug\oversurgeryproject.exe
 \\Mac\Home\Documents\GitHub\Gavvy\oversurgeryproject-master\oversurgeryproject\obj\Debug\oversurgeryproject.pdb
+\\Mac\Home\Documents\GitHub\Gavvy\oversurgeryproject-master\oversurgeryproject\obj\Debug\oversurgeryproject.Form1.resources
