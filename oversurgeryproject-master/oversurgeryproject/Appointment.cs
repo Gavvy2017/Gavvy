@@ -28,7 +28,7 @@ namespace oversurgeryproject
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 mm = new Form1();
+            Login mm = new Login();
             mm.Show();
         }
 
