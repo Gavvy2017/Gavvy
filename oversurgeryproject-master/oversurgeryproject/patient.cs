@@ -130,5 +130,10 @@ namespace oversurgeryproject
             Test mm = new Test();
             mm.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
